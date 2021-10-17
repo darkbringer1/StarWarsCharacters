@@ -3,16 +3,54 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		D8E9D4F7271B37BC00B160CA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8E9D4F6271B37BC00B160CA /* AppDelegate.swift */; };
 		D8E9D4F9271B37BC00B160CA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8E9D4F8271B37BC00B160CA /* SceneDelegate.swift */; };
 		D8E9D4FB271B37BC00B160CA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8E9D4FA271B37BC00B160CA /* ViewController.swift */; };
-		D8E9D4FE271B37BC00B160CA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D8E9D4FC271B37BC00B160CA /* Main.storyboard */; };
 		D8E9D500271B37BE00B160CA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D8E9D4FF271B37BE00B160CA /* Assets.xcassets */; };
 		D8E9D503271B37BE00B160CA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D8E9D501271B37BE00B160CA /* LaunchScreen.storyboard */; };
+		D8E9D50D271B381A00B160CA /* CharactersListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8E9D50C271B381A00B160CA /* CharactersListViewController.swift */; };
+		D8E9D510271B383400B160CA /* BaseComponents in Frameworks */ = {isa = PBXBuildFile; productRef = D8E9D50F271B383400B160CA /* BaseComponents */; };
+		D8E9D513271B386A00B160CA /* CharactersListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8E9D512271B386A00B160CA /* CharactersListViewModel.swift */; };
+		D8E9D516271B38B000B160CA /* CharactersListViewBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8E9D515271B38B000B160CA /* CharactersListViewBuilder.swift */; };
+		D8E9D519271B3BC800B160CA /* StarWarsApiRemote.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8E9D518271B3BC800B160CA /* StarWarsApiRemote.swift */; };
+		D8E9D51C271B3BEF00B160CA /* DefaultNetworkOperationPackage in Frameworks */ = {isa = PBXBuildFile; productRef = D8E9D51B271B3BEF00B160CA /* DefaultNetworkOperationPackage */; };
+		D8E9D51F271B3CA500B160CA /* StarWarsCharacterModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8E9D51E271B3CA500B160CA /* StarWarsCharacterModel.swift */; };
+		D8E9D522271B3F3000B160CA /* CharacterRequestServiceProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8E9D521271B3F3000B160CA /* CharacterRequestServiceProvider.swift */; };
+		D8E9D543271B428600B160CA /* EndPointManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8E9D542271B428600B160CA /* EndPointManager.swift */; };
+		D8E9D547271B80BE00B160CA /* CharacterListRequestServiceProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8E9D546271B80BE00B160CA /* CharacterListRequestServiceProvider.swift */; };
+		D8E9D54D271B81C300B160CA /* ImageCacheManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8E9D54C271B81C300B160CA /* ImageCacheManager.swift */; };
+		D8E9D553271B8A4C00B160CA /* StarWarsAPIRemoteProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8E9D552271B8A4C00B160CA /* StarWarsAPIRemoteProtocol.swift */; };
+		D8E9D575271B8B3E00B160CA /* CharacterCardLabelPackComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8E9D559271B8B3E00B160CA /* CharacterCardLabelPackComponent.swift */; };
+		D8E9D576271B8B3E00B160CA /* CharacterCardLabelPackData.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8E9D55A271B8B3E00B160CA /* CharacterCardLabelPackData.swift */; };
+		D8E9D577271B8B3E00B160CA /* CharacterCardComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8E9D55C271B8B3E00B160CA /* CharacterCardComponent.swift */; };
+		D8E9D578271B8B3E00B160CA /* CharacterCardData.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8E9D55D271B8B3E00B160CA /* CharacterCardData.swift */; };
+		D8E9D57D271B8B3E00B160CA /* CustomImageViewComponentContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8E9D566271B8B3E00B160CA /* CustomImageViewComponentContainer.swift */; };
+		D8E9D57E271B8B3E00B160CA /* CustomImageViewComponentData.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8E9D567271B8B3E00B160CA /* CustomImageViewComponentData.swift */; };
+		D8E9D57F271B8B3E00B160CA /* CustomImageViewComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8E9D568271B8B3E00B160CA /* CustomImageViewComponent.swift */; };
+		D8E9D580271B8B3E00B160CA /* CustomImageLoadingType.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8E9D569271B8B3E00B160CA /* CustomImageLoadingType.swift */; };
+		D8E9D58C271B901800B160CA /* CharacterSimpleLineComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8E9D58B271B901800B160CA /* CharacterSimpleLineComponent.swift */; };
+		D8E9D58E271B902500B160CA /* CharacterSimpleLineComponentData.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8E9D58D271B902500B160CA /* CharacterSimpleLineComponentData.swift */; };
+		D8E9D590271B97FC00B160CA /* CharacterListViewDataGetter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8E9D58F271B97FC00B160CA /* CharacterListViewDataGetter.swift */; };
+		D8E9D592271B981B00B160CA /* CharacterListDataFormatterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8E9D591271B981B00B160CA /* CharacterListDataFormatterProtocol.swift */; };
+		D8E9D594271B9E4E00B160CA /* CharacterListViewState.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8E9D593271B9E4E00B160CA /* CharacterListViewState.swift */; };
+		D8E9D597271B9EC200B160CA /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = D8E9D596271B9EC200B160CA /* RxSwift */; };
+		D8E9D59E271BA35200B160CA /* CharacterResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8E9D59D271BA35200B160CA /* CharacterResponseModel.swift */; };
+		D8E9D637271BBB0C00B160CA /* CharacterRequestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8E9D636271BBB0C00B160CA /* CharacterRequestModel.swift */; };
+		D8E9D639271BBB1800B160CA /* CharacterListRequestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8E9D638271BBB1800B160CA /* CharacterListRequestModel.swift */; };
+		D8E9D63B271BBB4800B160CA /* CharacterListResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8E9D63A271BBB4800B160CA /* CharacterListResponseModel.swift */; };
+		D8E9D63F271BBD7000B160CA /* CharacterListOperationsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8E9D63E271BBD7000B160CA /* CharacterListOperationsManager.swift */; };
+		D8E9D641271BBD7900B160CA /* CharacterListOperationsManagerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8E9D640271BBD7900B160CA /* CharacterListOperationsManagerProtocol.swift */; };
+		D8E9D644271BC01600B160CA /* CharacterCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8E9D643271BC01600B160CA /* CharacterCollectionView.swift */; };
+		D8E9D646271BC01F00B160CA /* CharacterCollectionViewData.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8E9D645271BC01F00B160CA /* CharacterCollectionViewData.swift */; };
+		D8E9D648271BC02D00B160CA /* CharacterCollectionViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8E9D647271BC02D00B160CA /* CharacterCollectionViewProtocol.swift */; };
+		D8E9D64B271BC22600B160CA /* BaseCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8E9D649271BC22600B160CA /* BaseCollectionViewCell.swift */; };
+		D8E9D64C271BC22600B160CA /* GenericCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8E9D64A271BC22600B160CA /* GenericCollectionViewCell.swift */; };
+		D8E9D64E271BC25400B160CA /* CharacterCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8E9D64D271BC25400B160CA /* CharacterCollectionViewCell.swift */; };
+		D8E9D651271BC2CC00B160CA /* UICollectionView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8E9D650271BC2CC00B160CA /* UICollectionView+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,10 +58,45 @@
 		D8E9D4F6271B37BC00B160CA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D8E9D4F8271B37BC00B160CA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		D8E9D4FA271B37BC00B160CA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		D8E9D4FD271B37BC00B160CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D8E9D4FF271B37BE00B160CA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D8E9D502271B37BE00B160CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D8E9D504271B37BE00B160CA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D8E9D50C271B381A00B160CA /* CharactersListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersListViewController.swift; sourceTree = "<group>"; };
+		D8E9D512271B386A00B160CA /* CharactersListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersListViewModel.swift; sourceTree = "<group>"; };
+		D8E9D515271B38B000B160CA /* CharactersListViewBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersListViewBuilder.swift; sourceTree = "<group>"; };
+		D8E9D518271B3BC800B160CA /* StarWarsApiRemote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarWarsApiRemote.swift; sourceTree = "<group>"; };
+		D8E9D51E271B3CA500B160CA /* StarWarsCharacterModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarWarsCharacterModel.swift; sourceTree = "<group>"; };
+		D8E9D521271B3F3000B160CA /* CharacterRequestServiceProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterRequestServiceProvider.swift; sourceTree = "<group>"; };
+		D8E9D542271B428600B160CA /* EndPointManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndPointManager.swift; sourceTree = "<group>"; };
+		D8E9D546271B80BE00B160CA /* CharacterListRequestServiceProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterListRequestServiceProvider.swift; sourceTree = "<group>"; };
+		D8E9D54C271B81C300B160CA /* ImageCacheManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCacheManager.swift; sourceTree = "<group>"; };
+		D8E9D552271B8A4C00B160CA /* StarWarsAPIRemoteProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarWarsAPIRemoteProtocol.swift; sourceTree = "<group>"; };
+		D8E9D559271B8B3E00B160CA /* CharacterCardLabelPackComponent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CharacterCardLabelPackComponent.swift; sourceTree = "<group>"; };
+		D8E9D55A271B8B3E00B160CA /* CharacterCardLabelPackData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CharacterCardLabelPackData.swift; sourceTree = "<group>"; };
+		D8E9D55C271B8B3E00B160CA /* CharacterCardComponent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CharacterCardComponent.swift; sourceTree = "<group>"; };
+		D8E9D55D271B8B3E00B160CA /* CharacterCardData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CharacterCardData.swift; sourceTree = "<group>"; };
+		D8E9D566271B8B3E00B160CA /* CustomImageViewComponentContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomImageViewComponentContainer.swift; sourceTree = "<group>"; };
+		D8E9D567271B8B3E00B160CA /* CustomImageViewComponentData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomImageViewComponentData.swift; sourceTree = "<group>"; };
+		D8E9D568271B8B3E00B160CA /* CustomImageViewComponent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomImageViewComponent.swift; sourceTree = "<group>"; };
+		D8E9D569271B8B3E00B160CA /* CustomImageLoadingType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomImageLoadingType.swift; sourceTree = "<group>"; };
+		D8E9D58B271B901800B160CA /* CharacterSimpleLineComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterSimpleLineComponent.swift; sourceTree = "<group>"; };
+		D8E9D58D271B902500B160CA /* CharacterSimpleLineComponentData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterSimpleLineComponentData.swift; sourceTree = "<group>"; };
+		D8E9D58F271B97FC00B160CA /* CharacterListViewDataGetter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterListViewDataGetter.swift; sourceTree = "<group>"; };
+		D8E9D591271B981B00B160CA /* CharacterListDataFormatterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterListDataFormatterProtocol.swift; sourceTree = "<group>"; };
+		D8E9D593271B9E4E00B160CA /* CharacterListViewState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterListViewState.swift; sourceTree = "<group>"; };
+		D8E9D59D271BA35200B160CA /* CharacterResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterResponseModel.swift; sourceTree = "<group>"; };
+		D8E9D636271BBB0C00B160CA /* CharacterRequestModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterRequestModel.swift; sourceTree = "<group>"; };
+		D8E9D638271BBB1800B160CA /* CharacterListRequestModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterListRequestModel.swift; sourceTree = "<group>"; };
+		D8E9D63A271BBB4800B160CA /* CharacterListResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterListResponseModel.swift; sourceTree = "<group>"; };
+		D8E9D63E271BBD7000B160CA /* CharacterListOperationsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterListOperationsManager.swift; sourceTree = "<group>"; };
+		D8E9D640271BBD7900B160CA /* CharacterListOperationsManagerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterListOperationsManagerProtocol.swift; sourceTree = "<group>"; };
+		D8E9D643271BC01600B160CA /* CharacterCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterCollectionView.swift; sourceTree = "<group>"; };
+		D8E9D645271BC01F00B160CA /* CharacterCollectionViewData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterCollectionViewData.swift; sourceTree = "<group>"; };
+		D8E9D647271BC02D00B160CA /* CharacterCollectionViewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterCollectionViewProtocol.swift; sourceTree = "<group>"; };
+		D8E9D649271BC22600B160CA /* BaseCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseCollectionViewCell.swift; sourceTree = "<group>"; };
+		D8E9D64A271BC22600B160CA /* GenericCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GenericCollectionViewCell.swift; sourceTree = "<group>"; };
+		D8E9D64D271BC25400B160CA /* CharacterCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CharacterCollectionViewCell.swift; sourceTree = "<group>"; };
+		D8E9D650271BC2CC00B160CA /* UICollectionView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionView+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +104,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D8E9D597271B9EC200B160CA /* RxSwift in Frameworks */,
+				D8E9D51C271B3BEF00B160CA /* DefaultNetworkOperationPackage in Frameworks */,
+				D8E9D510271B383400B160CA /* BaseComponents in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,15 +132,218 @@
 		D8E9D4F5271B37BC00B160CA /* StarWarsCharacters */ = {
 			isa = PBXGroup;
 			children = (
-				D8E9D4F6271B37BC00B160CA /* AppDelegate.swift */,
-				D8E9D4F8271B37BC00B160CA /* SceneDelegate.swift */,
-				D8E9D4FA271B37BC00B160CA /* ViewController.swift */,
-				D8E9D4FC271B37BC00B160CA /* Main.storyboard */,
+				D8E9D649271BC22600B160CA /* BaseCollectionViewCell.swift */,
+				D8E9D64A271BC22600B160CA /* GenericCollectionViewCell.swift */,
+				D8E9D554271B8B3E00B160CA /* Components */,
+				D8E9D540271B41DB00B160CA /* Delegates */,
+				D8E9D51D271B3C9900B160CA /* Models */,
+				D8E9D517271B3BAE00B160CA /* DataOps */,
+				D8E9D50A271B37F400B160CA /* Scenes */,
+				D8E9D54A271B81AD00B160CA /* Utilities */,
 				D8E9D4FF271B37BE00B160CA /* Assets.xcassets */,
 				D8E9D501271B37BE00B160CA /* LaunchScreen.storyboard */,
 				D8E9D504271B37BE00B160CA /* Info.plist */,
 			);
 			path = StarWarsCharacters;
+			sourceTree = "<group>";
+		};
+		D8E9D50A271B37F400B160CA /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				D8E9D4FA271B37BC00B160CA /* ViewController.swift */,
+				D8E9D50B271B380000B160CA /* CharactersListView */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		D8E9D50B271B380000B160CA /* CharactersListView */ = {
+			isa = PBXGroup;
+			children = (
+				D8E9D50C271B381A00B160CA /* CharactersListViewController.swift */,
+				D8E9D591271B981B00B160CA /* CharacterListDataFormatterProtocol.swift */,
+				D8E9D58F271B97FC00B160CA /* CharacterListViewDataGetter.swift */,
+				D8E9D593271B9E4E00B160CA /* CharacterListViewState.swift */,
+				D8E9D512271B386A00B160CA /* CharactersListViewModel.swift */,
+				D8E9D515271B38B000B160CA /* CharactersListViewBuilder.swift */,
+			);
+			path = CharactersListView;
+			sourceTree = "<group>";
+		};
+		D8E9D517271B3BAE00B160CA /* DataOps */ = {
+			isa = PBXGroup;
+			children = (
+				D8E9D63D271BBD5D00B160CA /* Managers */,
+				D8E9D520271B3F1B00B160CA /* Services */,
+				D8E9D63C271BBD4400B160CA /* APIRemote */,
+			);
+			path = DataOps;
+			sourceTree = "<group>";
+		};
+		D8E9D51D271B3C9900B160CA /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				D8E9D53D271B410000B160CA /* APIRequestModel */,
+				D8E9D53C271B40F200B160CA /* APIResponseModel */,
+				D8E9D51E271B3CA500B160CA /* StarWarsCharacterModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		D8E9D520271B3F1B00B160CA /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				D8E9D521271B3F3000B160CA /* CharacterRequestServiceProvider.swift */,
+				D8E9D546271B80BE00B160CA /* CharacterListRequestServiceProvider.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		D8E9D53C271B40F200B160CA /* APIResponseModel */ = {
+			isa = PBXGroup;
+			children = (
+				D8E9D59D271BA35200B160CA /* CharacterResponseModel.swift */,
+				D8E9D63A271BBB4800B160CA /* CharacterListResponseModel.swift */,
+			);
+			path = APIResponseModel;
+			sourceTree = "<group>";
+		};
+		D8E9D53D271B410000B160CA /* APIRequestModel */ = {
+			isa = PBXGroup;
+			children = (
+				D8E9D636271BBB0C00B160CA /* CharacterRequestModel.swift */,
+				D8E9D638271BBB1800B160CA /* CharacterListRequestModel.swift */,
+			);
+			path = APIRequestModel;
+			sourceTree = "<group>";
+		};
+		D8E9D540271B41DB00B160CA /* Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				D8E9D4F6271B37BC00B160CA /* AppDelegate.swift */,
+				D8E9D4F8271B37BC00B160CA /* SceneDelegate.swift */,
+			);
+			path = Delegates;
+			sourceTree = "<group>";
+		};
+		D8E9D541271B425000B160CA /* EndPointManager */ = {
+			isa = PBXGroup;
+			children = (
+				D8E9D542271B428600B160CA /* EndPointManager.swift */,
+			);
+			path = EndPointManager;
+			sourceTree = "<group>";
+		};
+		D8E9D54A271B81AD00B160CA /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				D8E9D64F271BC2BC00B160CA /* Extensions */,
+				D8E9D54B271B81B200B160CA /* CacheManeger */,
+				D8E9D541271B425000B160CA /* EndPointManager */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		D8E9D54B271B81B200B160CA /* CacheManeger */ = {
+			isa = PBXGroup;
+			children = (
+				D8E9D54C271B81C300B160CA /* ImageCacheManager.swift */,
+			);
+			path = CacheManeger;
+			sourceTree = "<group>";
+		};
+		D8E9D554271B8B3E00B160CA /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				D8E9D586271B8B8B00B160CA /* SWComponents */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		D8E9D55B271B8B3E00B160CA /* CharacterCardComponent */ = {
+			isa = PBXGroup;
+			children = (
+				D8E9D55C271B8B3E00B160CA /* CharacterCardComponent.swift */,
+				D8E9D55D271B8B3E00B160CA /* CharacterCardData.swift */,
+			);
+			path = CharacterCardComponent;
+			sourceTree = "<group>";
+		};
+		D8E9D565271B8B3E00B160CA /* CustomImageViewComponent */ = {
+			isa = PBXGroup;
+			children = (
+				D8E9D566271B8B3E00B160CA /* CustomImageViewComponentContainer.swift */,
+				D8E9D567271B8B3E00B160CA /* CustomImageViewComponentData.swift */,
+				D8E9D568271B8B3E00B160CA /* CustomImageViewComponent.swift */,
+				D8E9D569271B8B3E00B160CA /* CustomImageLoadingType.swift */,
+			);
+			path = CustomImageViewComponent;
+			sourceTree = "<group>";
+		};
+		D8E9D586271B8B8B00B160CA /* SWComponents */ = {
+			isa = PBXGroup;
+			children = (
+				D8E9D642271BBFED00B160CA /* CharcterCollectionView */,
+				D8E9D58A271B8FF100B160CA /* CharacterInfoComponent */,
+				D8E9D55B271B8B3E00B160CA /* CharacterCardComponent */,
+				D8E9D587271B8C5000B160CA /* CharacterLabelPackComponent */,
+				D8E9D565271B8B3E00B160CA /* CustomImageViewComponent */,
+			);
+			path = SWComponents;
+			sourceTree = "<group>";
+		};
+		D8E9D587271B8C5000B160CA /* CharacterLabelPackComponent */ = {
+			isa = PBXGroup;
+			children = (
+				D8E9D559271B8B3E00B160CA /* CharacterCardLabelPackComponent.swift */,
+				D8E9D55A271B8B3E00B160CA /* CharacterCardLabelPackData.swift */,
+			);
+			path = CharacterLabelPackComponent;
+			sourceTree = "<group>";
+		};
+		D8E9D58A271B8FF100B160CA /* CharacterInfoComponent */ = {
+			isa = PBXGroup;
+			children = (
+				D8E9D58B271B901800B160CA /* CharacterSimpleLineComponent.swift */,
+				D8E9D58D271B902500B160CA /* CharacterSimpleLineComponentData.swift */,
+			);
+			path = CharacterInfoComponent;
+			sourceTree = "<group>";
+		};
+		D8E9D63C271BBD4400B160CA /* APIRemote */ = {
+			isa = PBXGroup;
+			children = (
+				D8E9D518271B3BC800B160CA /* StarWarsApiRemote.swift */,
+				D8E9D552271B8A4C00B160CA /* StarWarsAPIRemoteProtocol.swift */,
+			);
+			path = APIRemote;
+			sourceTree = "<group>";
+		};
+		D8E9D63D271BBD5D00B160CA /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				D8E9D63E271BBD7000B160CA /* CharacterListOperationsManager.swift */,
+				D8E9D640271BBD7900B160CA /* CharacterListOperationsManagerProtocol.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		D8E9D642271BBFED00B160CA /* CharcterCollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				D8E9D643271BC01600B160CA /* CharacterCollectionView.swift */,
+				D8E9D645271BC01F00B160CA /* CharacterCollectionViewData.swift */,
+				D8E9D647271BC02D00B160CA /* CharacterCollectionViewProtocol.swift */,
+				D8E9D64D271BC25400B160CA /* CharacterCollectionViewCell.swift */,
+			);
+			path = CharcterCollectionView;
+			sourceTree = "<group>";
+		};
+		D8E9D64F271BC2BC00B160CA /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				D8E9D650271BC2CC00B160CA /* UICollectionView+Extension.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +362,11 @@
 			dependencies = (
 			);
 			name = StarWarsCharacters;
+			packageProductDependencies = (
+				D8E9D50F271B383400B160CA /* BaseComponents */,
+				D8E9D51B271B3BEF00B160CA /* DefaultNetworkOperationPackage */,
+				D8E9D596271B9EC200B160CA /* RxSwift */,
+			);
 			productName = StarWarsCharacters;
 			productReference = D8E9D4F3271B37BC00B160CA /* StarWarsCharacters.app */;
 			productType = "com.apple.product-type.application";
@@ -110,6 +394,11 @@
 				Base,
 			);
 			mainGroup = D8E9D4EA271B37BC00B160CA;
+			packageReferences = (
+				D8E9D50E271B383400B160CA /* XCRemoteSwiftPackageReference "BaseComponents" */,
+				D8E9D51A271B3BEF00B160CA /* XCRemoteSwiftPackageReference "DefaultNetworkOperationPackage" */,
+				D8E9D595271B9EC200B160CA /* XCRemoteSwiftPackageReference "RxSwift" */,
+			);
 			productRefGroup = D8E9D4F4271B37BC00B160CA /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -126,7 +415,6 @@
 			files = (
 				D8E9D503271B37BE00B160CA /* LaunchScreen.storyboard in Resources */,
 				D8E9D500271B37BE00B160CA /* Assets.xcassets in Resources */,
-				D8E9D4FE271B37BC00B160CA /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,23 +425,51 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D8E9D59E271BA35200B160CA /* CharacterResponseModel.swift in Sources */,
+				D8E9D641271BBD7900B160CA /* CharacterListOperationsManagerProtocol.swift in Sources */,
+				D8E9D592271B981B00B160CA /* CharacterListDataFormatterProtocol.swift in Sources */,
+				D8E9D58E271B902500B160CA /* CharacterSimpleLineComponentData.swift in Sources */,
+				D8E9D578271B8B3E00B160CA /* CharacterCardData.swift in Sources */,
+				D8E9D590271B97FC00B160CA /* CharacterListViewDataGetter.swift in Sources */,
+				D8E9D651271BC2CC00B160CA /* UICollectionView+Extension.swift in Sources */,
+				D8E9D50D271B381A00B160CA /* CharactersListViewController.swift in Sources */,
+				D8E9D64C271BC22600B160CA /* GenericCollectionViewCell.swift in Sources */,
+				D8E9D57E271B8B3E00B160CA /* CustomImageViewComponentData.swift in Sources */,
+				D8E9D63F271BBD7000B160CA /* CharacterListOperationsManager.swift in Sources */,
+				D8E9D58C271B901800B160CA /* CharacterSimpleLineComponent.swift in Sources */,
+				D8E9D577271B8B3E00B160CA /* CharacterCardComponent.swift in Sources */,
+				D8E9D594271B9E4E00B160CA /* CharacterListViewState.swift in Sources */,
+				D8E9D644271BC01600B160CA /* CharacterCollectionView.swift in Sources */,
+				D8E9D63B271BBB4800B160CA /* CharacterListResponseModel.swift in Sources */,
+				D8E9D547271B80BE00B160CA /* CharacterListRequestServiceProvider.swift in Sources */,
+				D8E9D576271B8B3E00B160CA /* CharacterCardLabelPackData.swift in Sources */,
+				D8E9D639271BBB1800B160CA /* CharacterListRequestModel.swift in Sources */,
 				D8E9D4FB271B37BC00B160CA /* ViewController.swift in Sources */,
 				D8E9D4F7271B37BC00B160CA /* AppDelegate.swift in Sources */,
 				D8E9D4F9271B37BC00B160CA /* SceneDelegate.swift in Sources */,
+				D8E9D57F271B8B3E00B160CA /* CustomImageViewComponent.swift in Sources */,
+				D8E9D51F271B3CA500B160CA /* StarWarsCharacterModel.swift in Sources */,
+				D8E9D646271BC01F00B160CA /* CharacterCollectionViewData.swift in Sources */,
+				D8E9D637271BBB0C00B160CA /* CharacterRequestModel.swift in Sources */,
+				D8E9D522271B3F3000B160CA /* CharacterRequestServiceProvider.swift in Sources */,
+				D8E9D54D271B81C300B160CA /* ImageCacheManager.swift in Sources */,
+				D8E9D648271BC02D00B160CA /* CharacterCollectionViewProtocol.swift in Sources */,
+				D8E9D57D271B8B3E00B160CA /* CustomImageViewComponentContainer.swift in Sources */,
+				D8E9D553271B8A4C00B160CA /* StarWarsAPIRemoteProtocol.swift in Sources */,
+				D8E9D64E271BC25400B160CA /* CharacterCollectionViewCell.swift in Sources */,
+				D8E9D64B271BC22600B160CA /* BaseCollectionViewCell.swift in Sources */,
+				D8E9D580271B8B3E00B160CA /* CustomImageLoadingType.swift in Sources */,
+				D8E9D543271B428600B160CA /* EndPointManager.swift in Sources */,
+				D8E9D575271B8B3E00B160CA /* CharacterCardLabelPackComponent.swift in Sources */,
+				D8E9D519271B3BC800B160CA /* StarWarsApiRemote.swift in Sources */,
+				D8E9D516271B38B000B160CA /* CharactersListViewBuilder.swift in Sources */,
+				D8E9D513271B386A00B160CA /* CharactersListViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		D8E9D4FC271B37BC00B160CA /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				D8E9D4FD271B37BC00B160CA /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		D8E9D501271B37BE00B160CA /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -341,6 +657,51 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		D8E9D50E271B383400B160CA /* XCRemoteSwiftPackageReference "BaseComponents" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/darkbringer1/BaseComponents.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.20;
+			};
+		};
+		D8E9D51A271B3BEF00B160CA /* XCRemoteSwiftPackageReference "DefaultNetworkOperationPackage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/emircanaydin/DefaultNetworkOperationPackage.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.3.1;
+			};
+		};
+		D8E9D595271B9EC200B160CA /* XCRemoteSwiftPackageReference "RxSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ReactiveX/RxSwift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.2.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		D8E9D50F271B383400B160CA /* BaseComponents */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D8E9D50E271B383400B160CA /* XCRemoteSwiftPackageReference "BaseComponents" */;
+			productName = BaseComponents;
+		};
+		D8E9D51B271B3BEF00B160CA /* DefaultNetworkOperationPackage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D8E9D51A271B3BEF00B160CA /* XCRemoteSwiftPackageReference "DefaultNetworkOperationPackage" */;
+			productName = DefaultNetworkOperationPackage;
+		};
+		D8E9D596271B9EC200B160CA /* RxSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D8E9D595271B9EC200B160CA /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = D8E9D4EB271B37BC00B160CA /* Project object */;
 }
