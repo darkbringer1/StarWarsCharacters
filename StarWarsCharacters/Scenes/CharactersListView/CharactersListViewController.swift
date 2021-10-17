@@ -20,6 +20,7 @@ class  CharactersListViewController: BaseViewController<CharactersListViewModel>
         super.prepareViewControllerConfigurations()
         viewModel.getCharacterList()
         subscribeViewModelListeners()
+        addMainComponent()
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -49,6 +50,7 @@ class  CharactersListViewController: BaseViewController<CharactersListViewModel>
             switch state {
                 case .done:
                     print("data is ready")
+                    self?.mainComponent.reloadCollecionView()
                 case .loading:
                     print("data is loading")
                 case .failure:

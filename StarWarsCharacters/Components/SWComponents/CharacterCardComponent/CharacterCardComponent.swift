@@ -24,6 +24,7 @@ class CharacterCardComponent: GenericBaseView<GenericDataProtocol> {
         let temp = UIView()
         temp.translatesAutoresizingMaskIntoConstraints = false
         temp.layer.cornerRadius = 6
+        temp.backgroundColor = #colorLiteral(red: 0.3647058904, green: 0.06666667014, blue: 0.9686274529, alpha: 1)
         temp.clipsToBounds = true
         return temp
     }()

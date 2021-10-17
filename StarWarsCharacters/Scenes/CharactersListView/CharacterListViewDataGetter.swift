@@ -15,9 +15,9 @@ class CharacterListViewDataGetter: CharacterListDataFormatterProtocol {
     private var list: [SWCharacter] = [SWCharacter]()
     
     func getItem(from data: SWCharacter) -> GenericDataProtocol {
-        return CharacterCardData(imageData: CustomImageViewComponentData(imageUrl: data.image!.absoluteString),
+        return CharacterCardData(imageData: CustomImageViewComponentData(imageUrl: data.image!),
                                  labelPackData: CharacterCardLabelPackData(
-                                    nameLabel: CharacterSimpleLineComponentData(lineValue: data.name),
+                                    nameLabel: CharacterSimpleLineComponentData(lineValue: data.name!),
                                     heightLabel: CharacterSimpleLineComponentData(lineValue: String(data.height ?? 999)),
                                     homeworldLabel: CharacterSimpleLineComponentData(lineValue: data.homeworld ?? "Unknown"),
                                     speciesLabel: CharacterSimpleLineComponentData(lineValue: data.species ?? "Unknown")))
@@ -28,8 +28,7 @@ class CharacterListViewDataGetter: CharacterListDataFormatterProtocol {
     }
     
     func getNumbeOfItem(in section: Int) -> Int {
-        let count = list.count
-        return count
+        return list.count - 1
     }
     
     func getCount() -> Int {
@@ -42,7 +41,7 @@ class CharacterListViewDataGetter: CharacterListDataFormatterProtocol {
     
     func setData(with response: CharacterListResponseModel) {
         self.data = response
-        self.list.append(contentsOf: response.results)
+        self.list.append(contentsOf: response.result)
     }
     
     func setData(with list: [SWCharacter]) {

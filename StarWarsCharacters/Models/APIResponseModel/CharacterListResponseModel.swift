@@ -9,6 +9,6 @@ import Foundation
 
 struct CharacterListResponseModel: Codable {
     
-    let results: [SWCharacter]
+    let result: [SWCharacter]
     
 }

@@ -16,8 +16,8 @@ class CharacterCollectionView: GenericBaseView<CharacterCollectionViewData> {
     lazy var collectionView: UICollectionView = {
         let layout = UICollectionViewFlowLayout()
         layout.scrollDirection = .vertical
-        layout.minimumLineSpacing = 20
-        layout.minimumInteritemSpacing = 20
+        layout.minimumLineSpacing = 10
+        layout.minimumInteritemSpacing = 10
         layout.sectionInset = UIEdgeInsets(top: 10, left: 10, bottom: 10, right: 10)
         let collection = UICollectionView(frame: .zero, collectionViewLayout: layout)
         collection.translatesAutoresizingMaskIntoConstraints = false
@@ -47,7 +47,7 @@ class CharacterCollectionView: GenericBaseView<CharacterCollectionViewData> {
     func addCollectionView() {
         addSubview(collectionView)
         
-        collectionView.backgroundColor = .green
+        collectionView.backgroundColor = .gray
         
         NSLayoutConstraint.activate([
         
