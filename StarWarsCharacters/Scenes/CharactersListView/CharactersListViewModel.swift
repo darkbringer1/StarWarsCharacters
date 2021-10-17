@@ -65,4 +65,5 @@ extension CharactersListViewModel: CharacterCollectionViewProtocol {
         return formatter.getItem(from: formatter.getData(at: index))
     }
     
+    
 }

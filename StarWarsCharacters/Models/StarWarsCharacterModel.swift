@@ -14,6 +14,7 @@ import Foundation
 
 // MARK: - Starwar
 struct SWCharacter: Codable {
+    
     let id: Int
     let name: String
     let height: Double?
@@ -32,3 +33,6 @@ struct SWCharacter: Codable {
     
 }
 
+struct SWList: Codable {
+    let result: [SWCharacter]
+}

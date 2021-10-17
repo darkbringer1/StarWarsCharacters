@@ -6,6 +6,9 @@
 //
 
 import Foundation
+
 struct CharacterListResponseModel: Codable {
+    
     let results: [SWCharacter]
+    
 }
