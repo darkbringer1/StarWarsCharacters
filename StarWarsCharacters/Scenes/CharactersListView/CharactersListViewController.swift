@@ -25,8 +25,10 @@ class  CharactersListViewController: BaseViewController<CharactersListViewModel>
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        self.navigationController?.setNavigationBarHidden(false, animated: true)
+        setupNavController()
     }
+    
+    
     
     
     func addMainComponent() {
@@ -59,6 +61,20 @@ class  CharactersListViewController: BaseViewController<CharactersListViewModel>
         }
     }
     
+    private func setupNavController() {
+        
+        let navCont = self.navigationController
+        
+        navCont?.setNavigationBarHidden(false, animated: true)
+        navCont?.navigationBar.barStyle = .black
+        navCont?.navigationBar.isTranslucent = false
+        
+        let image = UIImage(named: "starwars")
+        let imageView = UIImageView(image: image)
+        imageView.contentMode = .scaleAspectFit
+        self.navigationItem.titleView = imageView
+        
+    }
 }
 
 

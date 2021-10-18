@@ -15,9 +15,10 @@ class CharacterListViewDataGetter: CharacterListDataFormatterProtocol {
     private var list: [SWCharacter] = [SWCharacter]()
     
     func getItem(from data: SWCharacter) -> GenericDataProtocol {
-        return CharacterCardData(imageData: CustomImageViewComponentData(imageUrl: data.image!),
+        return CharacterCardData(imageData: CustomImageViewComponentData(imageUrl: data.image!).setContentMode(by: .scaleAspectFit),
                                  labelPackData: CharacterCardLabelPackData(
                                     nameLabel: CharacterSimpleLineComponentData(lineValue: data.name!),
+                                    name2Label: CharacterSimpleLineComponentData(lineValue: data.bornLocation ?? "Unknown"),
                                     heightLabel: CharacterSimpleLineComponentData(lineValue: String(data.height ?? 999)),
                                     homeworldLabel: CharacterSimpleLineComponentData(lineValue: data.homeworld ?? "Unknown"),
                                     speciesLabel: CharacterSimpleLineComponentData(lineValue: data.species ?? "Unknown")))

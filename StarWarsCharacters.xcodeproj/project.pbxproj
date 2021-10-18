@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D832C24E271D7CDC00DFBBFA /* CharacterHeaderComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = D832C24D271D7CDC00DFBBFA /* CharacterHeaderComponent.swift */; };
+		D832C251271D7CF700DFBBFA /* CharacterHeaderComponentData.swift in Sources */ = {isa = PBXBuildFile; fileRef = D832C250271D7CF700DFBBFA /* CharacterHeaderComponentData.swift */; };
 		D8E9D4F7271B37BC00B160CA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8E9D4F6271B37BC00B160CA /* AppDelegate.swift */; };
 		D8E9D4F9271B37BC00B160CA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8E9D4F8271B37BC00B160CA /* SceneDelegate.swift */; };
 		D8E9D4FB271B37BC00B160CA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8E9D4FA271B37BC00B160CA /* ViewController.swift */; };
@@ -47,13 +49,13 @@
 		D8E9D644271BC01600B160CA /* CharacterCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8E9D643271BC01600B160CA /* CharacterCollectionView.swift */; };
 		D8E9D646271BC01F00B160CA /* CharacterCollectionViewData.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8E9D645271BC01F00B160CA /* CharacterCollectionViewData.swift */; };
 		D8E9D648271BC02D00B160CA /* CharacterCollectionViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8E9D647271BC02D00B160CA /* CharacterCollectionViewProtocol.swift */; };
-		D8E9D64B271BC22600B160CA /* BaseCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8E9D649271BC22600B160CA /* BaseCollectionViewCell.swift */; };
-		D8E9D64C271BC22600B160CA /* GenericCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8E9D64A271BC22600B160CA /* GenericCollectionViewCell.swift */; };
 		D8E9D64E271BC25400B160CA /* CharacterCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8E9D64D271BC25400B160CA /* CharacterCollectionViewCell.swift */; };
 		D8E9D651271BC2CC00B160CA /* UICollectionView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8E9D650271BC2CC00B160CA /* UICollectionView+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D832C24D271D7CDC00DFBBFA /* CharacterHeaderComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterHeaderComponent.swift; sourceTree = "<group>"; };
+		D832C250271D7CF700DFBBFA /* CharacterHeaderComponentData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterHeaderComponentData.swift; sourceTree = "<group>"; };
 		D8E9D4F3271B37BC00B160CA /* StarWarsCharacters.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StarWarsCharacters.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D8E9D4F6271B37BC00B160CA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D8E9D4F8271B37BC00B160CA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -93,8 +95,6 @@
 		D8E9D643271BC01600B160CA /* CharacterCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterCollectionView.swift; sourceTree = "<group>"; };
 		D8E9D645271BC01F00B160CA /* CharacterCollectionViewData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterCollectionViewData.swift; sourceTree = "<group>"; };
 		D8E9D647271BC02D00B160CA /* CharacterCollectionViewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterCollectionViewProtocol.swift; sourceTree = "<group>"; };
-		D8E9D649271BC22600B160CA /* BaseCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseCollectionViewCell.swift; sourceTree = "<group>"; };
-		D8E9D64A271BC22600B160CA /* GenericCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GenericCollectionViewCell.swift; sourceTree = "<group>"; };
 		D8E9D64D271BC25400B160CA /* CharacterCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CharacterCollectionViewCell.swift; sourceTree = "<group>"; };
 		D8E9D650271BC2CC00B160CA /* UICollectionView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionView+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -113,6 +113,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D832C24B271D7CAD00DFBBFA /* CharacterLines */ = {
+			isa = PBXGroup;
+			children = (
+				D832C24C271D7CC600DFBBFA /* CharacterHeaderComponent */,
+				D8E9D58A271B8FF100B160CA /* CharacterInfoComponent */,
+			);
+			path = CharacterLines;
+			sourceTree = "<group>";
+		};
+		D832C24C271D7CC600DFBBFA /* CharacterHeaderComponent */ = {
+			isa = PBXGroup;
+			children = (
+				D832C24D271D7CDC00DFBBFA /* CharacterHeaderComponent.swift */,
+				D832C250271D7CF700DFBBFA /* CharacterHeaderComponentData.swift */,
+			);
+			path = CharacterHeaderComponent;
+			sourceTree = "<group>";
+		};
 		D8E9D4EA271B37BC00B160CA = {
 			isa = PBXGroup;
 			children = (
@@ -132,8 +150,6 @@
 		D8E9D4F5271B37BC00B160CA /* StarWarsCharacters */ = {
 			isa = PBXGroup;
 			children = (
-				D8E9D649271BC22600B160CA /* BaseCollectionViewCell.swift */,
-				D8E9D64A271BC22600B160CA /* GenericCollectionViewCell.swift */,
 				D8E9D554271B8B3E00B160CA /* Components */,
 				D8E9D540271B41DB00B160CA /* Delegates */,
 				D8E9D51D271B3C9900B160CA /* Models */,
@@ -283,7 +299,7 @@
 			isa = PBXGroup;
 			children = (
 				D8E9D642271BBFED00B160CA /* CharcterCollectionView */,
-				D8E9D58A271B8FF100B160CA /* CharacterInfoComponent */,
+				D832C24B271D7CAD00DFBBFA /* CharacterLines */,
 				D8E9D55B271B8B3E00B160CA /* CharacterCardComponent */,
 				D8E9D587271B8C5000B160CA /* CharacterLabelPackComponent */,
 				D8E9D565271B8B3E00B160CA /* CustomImageViewComponent */,
@@ -427,13 +443,13 @@
 			files = (
 				D8E9D59E271BA35200B160CA /* CharacterResponseModel.swift in Sources */,
 				D8E9D641271BBD7900B160CA /* CharacterListOperationsManagerProtocol.swift in Sources */,
+				D832C24E271D7CDC00DFBBFA /* CharacterHeaderComponent.swift in Sources */,
 				D8E9D592271B981B00B160CA /* CharacterListDataFormatterProtocol.swift in Sources */,
 				D8E9D58E271B902500B160CA /* CharacterSimpleLineComponentData.swift in Sources */,
 				D8E9D578271B8B3E00B160CA /* CharacterCardData.swift in Sources */,
 				D8E9D590271B97FC00B160CA /* CharacterListViewDataGetter.swift in Sources */,
 				D8E9D651271BC2CC00B160CA /* UICollectionView+Extension.swift in Sources */,
 				D8E9D50D271B381A00B160CA /* CharactersListViewController.swift in Sources */,
-				D8E9D64C271BC22600B160CA /* GenericCollectionViewCell.swift in Sources */,
 				D8E9D57E271B8B3E00B160CA /* CustomImageViewComponentData.swift in Sources */,
 				D8E9D63F271BBD7000B160CA /* CharacterListOperationsManager.swift in Sources */,
 				D8E9D58C271B901800B160CA /* CharacterSimpleLineComponent.swift in Sources */,
@@ -457,7 +473,7 @@
 				D8E9D57D271B8B3E00B160CA /* CustomImageViewComponentContainer.swift in Sources */,
 				D8E9D553271B8A4C00B160CA /* StarWarsAPIRemoteProtocol.swift in Sources */,
 				D8E9D64E271BC25400B160CA /* CharacterCollectionViewCell.swift in Sources */,
-				D8E9D64B271BC22600B160CA /* BaseCollectionViewCell.swift in Sources */,
+				D832C251271D7CF700DFBBFA /* CharacterHeaderComponentData.swift in Sources */,
 				D8E9D580271B8B3E00B160CA /* CustomImageLoadingType.swift in Sources */,
 				D8E9D543271B428600B160CA /* EndPointManager.swift in Sources */,
 				D8E9D575271B8B3E00B160CA /* CharacterCardLabelPackComponent.swift in Sources */,

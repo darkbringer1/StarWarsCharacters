@@ -19,12 +19,17 @@ class CharacterCardLabelPackComponent: GenericBaseView<CharacterCardLabelPackDat
     }()
     
     private lazy var mainStackView: UIStackView = {
-        let temp = UIStackView(arrangedSubviews: [nameLabel, heightLabel, homeworldLabel, speciesLabel])
+        let temp = UIStackView(arrangedSubviews: [nameLabel, name2Label, heightLabel, homeworldLabel, speciesLabel])
         temp.translatesAutoresizingMaskIntoConstraints = false
         temp.alignment = .leading
         temp.distribution = .fill
         temp.axis = .vertical
         temp.spacing = 10
+        return temp
+    }()
+    private lazy var name2Label: CharacterSimpleLineComponent = {
+        let temp = CharacterSimpleLineComponent()
+        temp.translatesAutoresizingMaskIntoConstraints = false
         return temp
     }()
     
@@ -63,6 +68,7 @@ class CharacterCardLabelPackComponent: GenericBaseView<CharacterCardLabelPackDat
         super.loadDataView()
         guard let data = returnData() else { return }
         nameLabel.setData(by: data.nameLabel)
+        name2Label.setData(by: data.name2Label)
         heightLabel.setData(by: data.heightLabel)
         homeworldLabel.setData(by: data.homeworldLabel)
         speciesLabel.setData(by: data.speciesLabel)

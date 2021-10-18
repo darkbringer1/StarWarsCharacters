@@ -47,7 +47,7 @@ class CharacterCollectionView: GenericBaseView<CharacterCollectionViewData> {
     func addCollectionView() {
         addSubview(collectionView)
         
-        collectionView.backgroundColor = .gray
+        collectionView.backgroundColor = #colorLiteral(red: 0.6000000238, green: 0.6000000238, blue: 0.6000000238, alpha: 1)
         
         NSLayoutConstraint.activate([
         
@@ -94,7 +94,7 @@ extension CharacterCollectionView: UICollectionViewDelegate, UICollectionViewDat
 extension CharacterCollectionView: UICollectionViewDelegateFlowLayout {
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        let height = (UIScreen.main.bounds.height - 50) / 5
+        let height = (UIScreen.main.bounds.height - 50) / 3
         let width = UIScreen.main.bounds.width - 20
         return CGSize(width: width, height: height)
     }

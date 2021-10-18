@@ -24,7 +24,7 @@ class CharacterCardComponent: GenericBaseView<GenericDataProtocol> {
         let temp = UIView()
         temp.translatesAutoresizingMaskIntoConstraints = false
         temp.layer.cornerRadius = 6
-        temp.backgroundColor = #colorLiteral(red: 0.3647058904, green: 0.06666667014, blue: 0.9686274529, alpha: 1)
+        temp.backgroundColor = #colorLiteral(red: 0.2549019754, green: 0.2745098174, blue: 0.3019607961, alpha: 1)
         temp.clipsToBounds = true
         return temp
     }()
@@ -43,11 +43,21 @@ class CharacterCardComponent: GenericBaseView<GenericDataProtocol> {
         let temp = CustomImageViewComponentContainer()
         temp.translatesAutoresizingMaskIntoConstraints = false
         temp.widthAnchor.constraint(equalToConstant: 200).isActive = true
-        temp.layer.cornerRadius = 4
+        temp.layer.masksToBounds = true
+        temp.layer.borderWidth = 10
+        temp.layer.cornerRadius = 10
         temp.layer.shadowColor = UIColor.black.cgColor
         temp.layer.shadowOffset = CGSize(width: 0, height: 2)
         temp.layer.shadowRadius = 4
         temp.layer.shadowOpacity = 0.6
+        return temp
+    }()
+    
+    private lazy var circleCutout: UIView = {
+        let temp = UIView()
+        temp.translatesAutoresizingMaskIntoConstraints = false
+        temp.clipsToBounds = true
+        
         return temp
     }()
     

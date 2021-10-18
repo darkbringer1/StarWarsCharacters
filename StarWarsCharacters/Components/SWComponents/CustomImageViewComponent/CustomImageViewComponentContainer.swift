@@ -15,6 +15,7 @@ class CustomImageViewComponentContainer: GenericBaseView<CustomImageViewComponen
         temp.translatesAutoresizingMaskIntoConstraints = false
         temp.clipsToBounds = true
         temp.layer.cornerRadius = 8
+        temp.contentMode = .scaleAspectFit
         return temp
     }()
     
